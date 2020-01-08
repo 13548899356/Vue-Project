@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-28 10:56:50 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.basics.Product" table="PRODUCT">
+        <id name="prodId" type="java.lang.String">
+            <column name="PROD_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="prodName" type="java.lang.String">
+            <column name="PROD_NAME" />
+        </property>
+        <property name="prodType" type="java.lang.String">
+            <column name="PROD_TYPE" />
+        </property>
+        <property name="prodBatch" type="java.lang.String">
+            <column name="PROD_BATCH" />
+        </property>
+        <property name="prodUtil" type="java.lang.String">
+            <column name="PROD_UNIT" />
+        </property>
+        <property name="prodPrice" type="float">
+            <column name="PROD_PRICE" />
+        </property>
+        <property name="prodMemo" type="java.lang.String">
+            <column name="PROD_MEMO" />
+        </property>
+    </class>
+</hibernate-mapping>

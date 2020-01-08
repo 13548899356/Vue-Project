@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-10-15 14:11:18 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.customer.cstLost" table="CST_LOST">
+        <id name="lstId" type="java.lang.String">
+            <column name="LST_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="lstCustNo" type="java.lang.String">
+            <column name="LST_CUST_NO" />
+        </property>
+        <property name="lstCustName" type="java.lang.String">
+            <column name="LST_CUST_NAME" />
+        </property>
+        <property name="lstCustManagerId" type="java.lang.String">
+            <column name="LST_CUST_MANAGER_ID" />
+        </property>
+        <property name="lstCustManagerName" type="java.lang.String">
+            <column name="LST_CUST_MANAGER_NAME" />
+        </property>
+        <property name="lstLastOrderDate" type="java.sql.Timestamp">
+            <column name="LST_LAST_ORDER_DATE" />
+        </property>
+        <property name="lstLostDate" type="java.sql.Timestamp">
+            <column name="LST_LOST_DATE" />
+        </property>
+        <property name="lstDelay" type="java.lang.String">
+            <column name="LST_DELAY" />
+        </property>
+        <property name="lstReason" type="java.lang.String">
+            <column name="LST_REASON" />
+        </property>
+        <property name="lstStatus" type="java.lang.String">
+            <column name="LST_STATUS" />
+        </property>
+    </class>
+</hibernate-mapping>

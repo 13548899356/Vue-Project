@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-27 12:59:32 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.customer.cstActivity" table="CST_ACTIVITY">
+        <id name="atvId" type="java.lang.String">
+            <column name="ATV_ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="atvCustNo" type="java.lang.String">
+            <column name="ATV_CUST_NO" />
+        </property>
+        <property name="atvCustName" type="java.lang.String">
+            <column name="ATV_CUST_NAME" />
+        </property>
+        <property name="atvDate" type="java.sql.Timestamp" insert="false">
+            <column name="ATV_DATE" />
+        </property>
+        <property name="atvPlace" type="java.lang.String">
+            <column name="ATV_PLACE" />
+        </property>
+        <property name="atvTitle" type="java.lang.String">
+            <column name="ATV_TITLE" />
+        </property>
+        <property name="atvRemark" type="java.lang.String">
+            <column name="ATV_REMARK" />
+        </property>
+        <property name="atvDesc" type="java.lang.String">
+            <column name="ATV_DESC" />
+        </property>
+    </class>
+</hibernate-mapping>

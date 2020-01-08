@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-26 19:09:35 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.zking.sys.entity.customer.cstCustomer"
+		table="cst_customer">
+		<id name="custNo" type="java.lang.String">
+			<column name="cust_No" />
+			<generator class="uuid" />
+		</id>
+
+		<property name="custName" type="java.lang.String">
+			<column name="cust_name" />
+		</property>
+		<property name="custRegion" type="java.lang.String">
+			<column name="cust_region" />
+		</property>
+		<property name="custManagerId" type="java.lang.Integer" insert="false" update="false">
+			<column name="cust_manager_id"  />
+		</property>
+		<property name="custManagetName" type="java.lang.String">
+			<column name="cust_manager_name" />
+		</property>
+		<property name="custLevel" type="java.lang.Integer" insert="false" update="false" >
+			<column name="cust_level" />
+		</property>
+		<property name="custLevelLabel" type="java.lang.String" >
+			<column name="cust_level_label" />
+		</property>
+		<property name="custSatisfy" type="java.lang.Integer"  >
+			<column name="cust_satisfy" />
+		</property>
+		<property name="custCredit" type="java.lang.Integer"  >
+			<column name="cust_credit" />
+		</property>
+		<property name="custAddr" type="java.lang.String">
+			<column name="cust_addr" />
+		</property>
+		<property name="custZip" type="java.lang.String">
+			<column name="cust_zip" />
+		</property>
+		<property name="custTel" type="java.lang.String">
+			<column name="cust_tel" />
+		</property>
+		<property name="custFax" type="java.lang.String">
+			<column name="cust_fax" />
+		</property>
+		<property name="custWebsite" type="java.lang.String">
+			<column name="cust_website" />
+		</property>
+		<property name="custLicenceNo" type="java.lang.String">
+			<column name="cust_licence_no" />
+		</property>
+		<property name="custChieftain" type="java.lang.String">
+			<column name="cust_chieftain" />
+		</property>
+		<property name="custBankroll" type="float">
+			<column name="cust_bankroll" />
+		</property>
+		<property name="custTurnover" type="float">
+			<column name="cust_turnover" />
+		</property>
+		<property name="custBank" type="java.lang.String">
+			<column name="cust_bank" />
+		</property>
+		<property name="custBankAccount" type="java.lang.String"
+			access="field">
+			<column name="cust_bank_account" />
+		</property>
+		<property name="custLocalTaxNo" type="java.lang.String">
+			<column name="cust_local_tax_no" />
+		</property>
+		<property name="custNationalTaxNo" type="java.lang.String"
+			access="field">
+			<column name="cust_national_tax_no" />
+		</property>
+		<property name="custStatus" type="java.lang.String">
+			<column name="cust_status" />
+		</property>
+	</class>
+</hibernate-mapping>

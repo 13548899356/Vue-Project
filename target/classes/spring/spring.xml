@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+	   	http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	<import resource="spring-base.xml"/>
+	<import resource="spring-sysUser.xml"/>
+	<import resource="spring-cstCustomer.xml"/>
+	<import resource="spring-Module.xml"/>
+	<import resource="spring-cstLinkman.xml"/>
+	<import resource="spring-cstActivity.xml"/>
+	<import resource="spring-Orders.xml"/>
+	<import resource="spring-Product.xml"/>
+	<import resource="spring-OrderLine.xml"/>
+	<import resource="spring-basDict.xml"/>
+	<import resource="spring-cstLost.xml"/> 
+	<import resource="spring-salChance.xml"/>
+	<import resource="spring-salPlan.xml"/>
+	<import resource="spring-cstService.xml"/>
+	<import resource="spring-Storage.xml"/>
+	<!-- <import resource="spring-sysRole.xml"/> -->
+</beans>

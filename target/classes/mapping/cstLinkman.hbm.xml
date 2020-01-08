@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-27 11:23:37 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.customer.cstLinkman" table="CST_LINKMAN">
+        <id name="lkmId" type="java.lang.String">
+            <column name="LKM_ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="lkmCustNo" type="java.lang.String">
+            <column name="LKM_CUST_NO" />
+        </property>
+        <property name="lkmCustName" type="java.lang.String">
+            <column name="LKM_CUST_NAME" />
+        </property>
+        <property name="lkmName" type="java.lang.String">
+            <column name="LKM_NAME" />
+        </property>
+        <property name="lkmSex" type="java.lang.String" >
+            <column name="LKM_SEX" />
+        </property>
+        <property name="lkmPostion" type="java.lang.String">
+            <column name="LKM_POSTION" />
+        </property>
+        <property name="lkmTel" type="java.lang.String">
+            <column name="LKM_TEL" />
+        </property>
+        <property name="lkmMobile" type="java.lang.String">
+            <column name="LKM_MOBILE" />
+        </property>
+        <property name="likMemo" type="java.lang.String">
+            <column name="LKM_MEMO" />
+        </property>
+    </class>
+</hibernate-mapping>

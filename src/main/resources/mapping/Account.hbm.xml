@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zking.ssh2.sys.entity.Account" table="t_account">
+		<id name="userName" type="java.lang.String" column="user_name">
+			<generator class="assigned"/>
+		</id>
+		<property name="balance" type="java.lang.Float" column="balance" ></property>
+	</class>
+</hibernate-mapping>

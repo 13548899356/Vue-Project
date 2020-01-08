@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-28 10:52:30 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.customer.OrderLine" table="ORDER_LINE">
+        <id name="oddId" type="java.lang.String">
+            <column name="ODD_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="oddOrderId" type="java.lang.String">
+            <column name="ODD_ORDER_ID" />
+        </property>
+        <property name="oddProdId" type="java.lang.String">
+            <column name="ODD_PROD_ID" />
+        </property>
+        <property name="oddCount" type="int">
+            <column name="ODD_COUNT" />
+        </property>
+        <property name="oddUnit" type="java.lang.String">
+            <column name="ODD_UNIT" />
+        </property>
+        <property name="oddPrice" type="float">
+            <column name="ODD_PRICE" />
+        </property>
+    </class>
+</hibernate-mapping>

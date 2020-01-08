@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-28 9:17:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.market.salChance" table="sal_chance">
+        <id name="chcId" type="java.lang.String">
+            <column name="chc_id" />
+            <generator class="uuid" />
+        </id>
+        <property name="chcSource" type="java.lang.String">
+            <column name="chc_source" />
+        </property>
+        <property name="chcCustName" type="java.lang.String">
+            <column name="chc_cust_name" />
+        </property>
+        <property name="chcTitle" type="java.lang.String">
+            <column name="chc_title" />
+        </property>
+        <property name="chcRate" type="java.lang.Integer">
+            <column name="chc_rate" />
+        </property>
+         <property name="chcLinkman" type="java.lang.String">
+            <column name="chc_linkman" />
+        </property>
+         <property name="chcTel" type="java.lang.String">
+            <column name="chc_tel" />
+        </property>
+        <property name="chcDesc" type="java.lang.String">
+            <column name="chc_desc" />
+        </property>
+         <property name="chcCreateId" type="java.lang.String">
+            <column name="chc_create_id" />
+        </property>
+         <property name="chcCreateBy" type="java.lang.String">
+            <column name="chc_create_by" />
+        </property>
+        <property name="chcCreateDate" type="java.sql.Timestamp" insert="false" update="false">
+            <column name="chc_create_date" />
+        </property>
+         <property name="chcDueId" type="java.lang.Integer">
+            <column name="chc_due_id" />
+        </property>
+        <property name="chDueTo" type="java.lang.String">
+            <column name="chc_due_to" />
+        </property>
+        <property name="chcDueDate" type="java.sql.Timestamp" insert="false" update="false">
+            <column name="chc_due_date" />
+        </property>
+        <property name="chcStatus" type="java.lang.String">
+            <column name="chc_status" />
+        </property>
+    </class>
+</hibernate-mapping>
+

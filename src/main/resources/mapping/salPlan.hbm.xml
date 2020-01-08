@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-28 9:17:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.market.salPlan" table="sal_plan">
+        <id name="plaId" type="java.lang.String">
+            <column name="pla_id" />
+            <generator class="uuid" />
+        </id>
+        <property name="plachcId" type="java.lang.String">
+            <column name="pla_chc_id" />
+        </property>
+        <property name="plaDate" type="java.sql.Timestamp" insert="false" update="false">
+            <column name="pla_date" />
+        </property>
+        <property name="plaTodo" type="java.lang.String">
+            <column name="pla_todo" />
+        </property>
+        <property name="plaResult" type="java.lang.String">
+            <column name="pla_result" />
+        </property>
+    </class>
+</hibernate-mapping>

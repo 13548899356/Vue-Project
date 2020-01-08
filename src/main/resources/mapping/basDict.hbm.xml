@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-10-9 12:02:42 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.basics.basDict" table="BAS_DICT">
+        <id name="dictId" type="java.lang.String">
+            <column name="DICT_ID" />
+            <generator class="assigned" />
+        </id>
+        <property name="dictType" type="java.lang.String">
+            <column name="DICT_TYPE" />
+        </property>
+        <property name="dictItem" type="java.lang.String">
+            <column name="DICT_ITEM" />
+        </property>
+        <property name="dictValue" type="java.lang.String">
+            <column name="DICT_VALUE" />
+        </property>
+        <property name="dictIsEditable" type="java.lang.Integer">
+            <column name="DICT_IS_EDITABLE" />
+        </property>
+    </class>
+</hibernate-mapping>

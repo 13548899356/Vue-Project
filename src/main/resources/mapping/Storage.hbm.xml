@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-10-22 13:53:20 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.basics.Storage" table="STORAGE">
+        <id name="stkId" type="java.lang.String">
+            <column name="STK_ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="stkProdId" type="java.lang.String">
+            <column name="STK_PROD_ID" />
+        </property>
+        <property name="stkWarehouse" type="java.lang.String">
+            <column name="STK_WAREHOUSE" />
+        </property>
+        <property name="stkWare" type="java.lang.String">
+            <column name="STK_WARE" />
+        </property>
+        <property name="stkCount" type="int">
+            <column name="STK_COUNT" />
+        </property>
+        <property name="stkMemo" type="java.lang.String">
+            <column name="STK_MEMO" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-9-28 9:17:29 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.zking.sys.entity.customer.Orders" table="ORDERS">
+        <id name="odrId" type="java.lang.String">
+            <column name="ODR_ID" />
+            <generator class="uuid" />
+        </id>
+        <property name="odrCustmoer" type="java.lang.String">
+            <column name="ODR_CUSTOMER" />
+        </property>
+        <property name="odrDate" type="java.sql.Timestamp" insert="false">
+            <column name="ODR_DATE" />
+        </property>
+        <property name="odrAddr" type="java.lang.String">
+            <column name="ODR_ADDR" />
+        </property>
+        <property name="odrStatus" type="java.lang.String">
+            <column name="ODR_STATUS" />
+        </property>
+         <property name="odrCustomerNo" type="java.lang.String">
+            <column name="ODR_CUSTOMER_No" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="Storage" extends="struts-base">
+		<action name="Storage_*" class="com.zking.sys.action.basics.StorageAction" method="{1}">
+		<result name="success">/index.jsp</result>
+		</action>
+	</package>
+</struts>

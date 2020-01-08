@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.zking.sys.entity.service.cstService" table="cst_service">
+		<id name="svrId" type="java.lang.String" column="svr_id">
+			<generator class="uuid" />
+		</id>
+		<property name="svrType" type="java.lang.String" column="svr_type"></property>
+		<property name="svrTitle" type="java.lang.String" column="svr_title"></property>
+		<property name="svrCustNo" type="java.lang.String" column="svr_cust_no"></property>
+		
+		<property name="svrCustName" type="java.lang.String" column="svr_cust_name"></property>
+		<property name="svrStatus" insert="false" type="java.lang.String" >
+			<column name="svr_status"  ></column>
+		</property>
+		<property name="svrRequest" type="java.lang.String" column="svr_request"></property>
+		<property name="svrCreateId" type="java.lang.String" column="svr_create_id"></property>
+		
+		<property name="svrCreateBy" type="java.lang.String" column="svr_create_by"></property>
+		<property name="svrCreateDate" type="java.lang.String" column="svr_create_date"></property>
+		<property name="svrDueId" type="java.lang.String" column="svr_due_id"></property>
+		<property name="svrDueTo" type="java.lang.String" column="svr_due_to"></property>
+		
+		<property name="svrDueDate" type="java.lang.String" column="svr_due_date"></property>
+		<property name="svrDeal" type="java.lang.String" column="svr_deal"></property>
+		<property name="svrDealId" type="java.lang.String" column="svr_deal_id"></property>
+		<property name="svrDealBy" type="java.lang.String" column="svr_deal_by"></property>
+		
+		<property name="svrDealDate" type="java.lang.String" column="svr_deal_date"></property>
+		<property name="svrResult" type="java.lang.String" column="svr_result"></property>
+		<property name="svrSatisfy" type="java.lang.Integer" column="svr_satisfy"></property>
+	</class>
+</hibernate-mapping>

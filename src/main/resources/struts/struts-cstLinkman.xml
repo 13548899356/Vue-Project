@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+	<package name="struts-LinkmanAction" extends="struts-base">
+	<!-- 此class 是spring-Account.xml bean 属性名，该属性中有完整类名 -->
+		<action name="linkmanAction_*" class="linkmanAction" method="{1}">
+			<result name="success">/index.jsp</result>
+		</action>
+	</package>
+
+</struts>
